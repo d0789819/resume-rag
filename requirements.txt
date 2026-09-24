@@ -1,0 +1,5 @@
+faiss-cpu==1.12.0
+PyPDF2==3.0.1
+sentence-transformers==5.1.1
+llama_cpp_python==0.3.16
+Flask==3.1.2

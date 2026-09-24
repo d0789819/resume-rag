@@ -1,0 +1,21 @@
+# LLM model (~3.9 GB, exceeds GitHub's 100 MB limit; see README "Download LLM Model")
+model/*.gguf
+
+# Generated on first run by app.py
+faiss_index.faiss
+chunks_metadata.json
+
+# Python virtual environment (README: python -m venv rag)
+rag/
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
