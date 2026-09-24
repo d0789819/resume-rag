@@ -6,7 +6,7 @@
 - 向量庫：FAISS
 - 向量維度：512 (由bge-small-zh-v1.5決定) \[[1](https://huggingface.co/BAAI/bge-small-zh-v1.5)\]
 - 向量型態：float32
-- 正規化：L2正規化 (`normalize_embeddings=True`)；相似度：Cosine Similarity (流程：L2正規化 ⇒ IndexFlatIP內積 ⇒ 等價於Cosine Similarity)
+- 正規化：L2正規化 ( `normalize_embeddings=True` )；相似度：Cosine Similarity (流程：L2正規化 ⇒ IndexFlatIP內積 ⇒ 等價於Cosine Similarity)
 - 索引類型：IndexFlatIP (精確內積索引，非近似搜尋；無額外參數，索引維度由向量維度自動決定)
 - 檢索方式：為輕量化供CPU運行，取相似度最高的3個Chunk輸入至LLM
 
@@ -15,7 +15,7 @@
 - Chunk策略：
   - 每段長度：無限制
   - 重疊長度：無重疊
-  - 策略：法規名稱與修正日期獨立為第一個Chunk；正文依「章 ⇒ 條 ⇒ 項」切分，最小以阿拉伯數字之「項」為單位，以提高檢索精準度；Chunk內容為條文本文，章節與條號另存於metadata (`chunks_metadata.json`)
+  - 策略：法規名稱與修正日期獨立為第一個Chunk；正文依「章 ⇒ 條 ⇒ 項」切分，最小以阿拉伯數字之「項」為單位，以提高檢索精準度；Chunk內容為條文本文，章節與條號另存於metadata ( `chunks_metadata.json` )
 
 ## 檢索 + 本地LLM回答
 - 支援提問方式：CLI模式與API模式
