@@ -125,7 +125,3 @@ The usage for **Docker Container Installation** is as same as the **Python Insta
 ### Quit
 
 ![Quit](image/退出程式.png)
-
----
-
-RAG system made by **SH4DOW**
